@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="BaseballStudio.MyPageHome">
+	<ContentPage.Content>
+		<Grid RowSpacing="0" ColumnSpacing="0" Padding="0,20,0,0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Source="HeroImage.png" Aspect="AspectFit"
+				HorizontalOptions="FillAndExpand" /> 
+
+			<Label
+				x:Name="btnAmericanLeague"
+				Grid.Row="1"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				BackgroundColor="White"
+				TextColor="Red"
+				Text="American League" 
+				HorizontalOptions="Center"
+				FontSize="Large"/>
+
+			<Button 
+				x:Name="btnALCentral"
+				Grid.Row="2"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Central" 
+				FontSize="Medium"
+				Clicked="OnButtonClicked" />
+
+			<Button 
+				x:Name="btnALEastern"
+				Grid.Row="3"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Eastern" 
+				FontSize="Medium"
+				Clicked="btnALEasternClicked" />
+
+			<Button 
+				x:Name="btnALWestern"
+				Grid.Row="3"
+				Grid.Column="1"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Western" 
+				FontSize="Medium"
+				Clicked="btnALWesternClicked"/>
+
+			<Label
+				x:Name="btnNationalLeague"
+				Grid.Row="4"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				BackgroundColor="White"
+				TextColor="Blue"
+				Text="National league" 
+				HorizontalOptions="Center"
+				FontSize="Large"/>
+
+			<Button 
+				x:Name="btnNLCentral"
+				Grid.Row="5"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				BackgroundColor="Blue"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Central" 
+				FontSize="Medium"
+				Clicked="btnNLCentralClicked"/>
+
+			<Button 
+				x:Name="btnNLEastern"
+				Grid.Row="6"
+				Grid.Column="0"
+				BackgroundColor="Blue"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Eastern" 
+				FontSize="Medium"
+				Clicked="btnNLEasternClicked"/>
+
+			<Button 
+				x:Name="btnNLWestern"
+				Grid.Row="6"
+				Grid.Column="1"
+				BackgroundColor="Blue"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Western" 
+				FontSize="Medium"
+				Clicked="btnNLWesternClicked"/>
+
+		</Grid>
+
+	</ContentPage.Content>
+</ContentPage>

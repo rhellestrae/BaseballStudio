@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="BaseballStudio.MyPageWeb">
+	<ContentPage.Content>
+
+	<StackLayout>
+
+			<StackLayout Orientation="Horizontal" Padding="10, 20, 10, 0" >
+				<Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" />
+				<Image Source="HeroImageSmall.png" HeightRequest="100" WidthRequest="100"/>
+			</StackLayout>
+
+			<WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" />
+
+		</StackLayout>
+
+<!--	<Grid RowSpacing="0" ColumnSpacing="0" Padding="5,20,5,0" x:Name="grdMain">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="70" />
+			</Grid.ColumnDefinitions>
+
+			<StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+				<Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" FontSize="Medium"/>
+				<Image Source="HeroImageSmall.png" HeightRequest="75" WidthRequest="75"/>
+			</StackLayout>
+
+			<WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
+
+			<StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" x:Name="slAdMob" VerticalOptions="End">
+				
+			</StackLayout>
+
+		</Grid>
+-->
+	</ContentPage.Content>
+</ContentPage>

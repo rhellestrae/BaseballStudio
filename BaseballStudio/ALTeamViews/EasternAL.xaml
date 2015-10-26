@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="BaseballStudio.EasternAL">
+	<ContentPage.Content>
+
+	<Grid RowSpacing="0" ColumnSpacing="0" Padding="5,20,5,0" x:Name="grdMain">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="70" />
+			</Grid.ColumnDefinitions>
+
+			<StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+				<Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" FontSize="18"/>
+				<Image Source="HeroImageSmall.png" HeightRequest="75" WidthRequest="75"/>
+			</StackLayout>
+
+			<Button 
+				x:Name="btnALToronto"
+				Grid.Row="1"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Kansas City Royals" 
+				FontSize="Medium"
+				Clicked="OnButtonClicked"/>
+
+			<Image x:Name="imgBSLogo" 
+				Source="HeroImageSmall.png" 
+				Grid.Row="1"
+				Grid.Column="1">
+			</Image> 
+
+			<Image x:Name="imgTwitterLogo" 
+				Source="TwitterLogoRedo.png" 
+				Grid.Row="1"
+				Grid.Column="2">
+			</Image> 
+
+			<Button 
+				x:Name="btnNYYankees"
+				Grid.Row="2"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Minnesota Twins" 
+				FontSize="Medium"
+				Clicked="OnbtnNYYankeesClicked"/>
+
+			<Image x:Name="imgNYYankees" 
+				Source="HeroImageSmall.png" 
+				Grid.Row="2"
+				Grid.Column="1">
+			</Image> 
+
+			<Image x:Name="imgTwitterNYYankees" 
+				Source="TwitterLogoRedo.png" 
+				Grid.Row="2"
+				Grid.Column="2">
+			</Image> 
+
+			<Button 
+				x:Name="btnBaltimore"
+				Grid.Row="3"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Cleveland Indians" 
+				FontSize="Medium"
+				Clicked="btnBaltimoreClicked"/>
+
+			<Image x:Name="imgBaltimore" 
+				Source="HeroImageSmall.png" 
+				Grid.Row="3"
+				Grid.Column="1">
+			</Image> 
+
+			<Image x:Name="imgTwitterBaltimore" 
+				Source="TwitterLogoRedo.png" 
+				Grid.Row="3"
+				Grid.Column="2">
+			</Image> 
+
+			<Button 
+				x:Name="btnTampa"
+				Grid.Row="4"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Chicago White Sox" 
+				FontSize="Medium"
+				Clicked="btnTampaClicked"/>
+
+			<Image x:Name="imgTampa" 
+				Source="HeroImageSmall.png" 
+				Grid.Row="4"
+				Grid.Column="1">
+			</Image> 
+
+			<Image x:Name="imgTwitterTampa" 
+				Source="TwitterLogoRedo.png" 
+				Grid.Row="4"
+				Grid.Column="2">
+			</Image> 
+
+			<Button 
+				x:Name="btnBoston"
+				Grid.Row="5"
+				Grid.Column="0"
+				BackgroundColor="Red"
+				BorderRadius="1"
+				BorderWidth="1"
+				BorderColor="White"
+				TextColor="White"
+				Text="Detroit Tigers" 
+				FontSize="Medium"
+				Clicked="btnBostonClicked"/>
+
+			<Image x:Name="imgBoston" 
+				Source="HeroImageSmall.png" 
+				Grid.Row="5"
+				Grid.Column="1">
+			</Image> 
+
+			<Image x:Name="imgTwitterBoston" 
+				Source="TwitterLogoRedo.png" 
+				Grid.Row="5"
+				Grid.Column="2">
+			</Image> 
+
+			<StackLayout BackgroundColor="White" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" x:Name="slAdMob" VerticalOptions="End">
+				
+			</StackLayout>
+
+		</Grid>
+
+	</ContentPage.Content>
+</ContentPage>
